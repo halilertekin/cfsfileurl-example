@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+
+.drop-zone {
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+}
+.drop-zone.drop-zone-hover {
+    border-style: dashed;
+    border-width: 3px;
+}

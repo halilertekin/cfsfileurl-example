@@ -1,0 +1,34 @@
+<head>
+    <title>cfsfileurl-example</title>
+</head>
+
+<body>
+<h1>Drop on Drop Zone</h1>
+
+<h3>{{loginButtons}}</h3>
+
+{{>dropZone}}
+
+<p>Images:</p>
+<ul>
+    {{> imageList}}
+</ul>
+</body>
+
+<template name="dropZone">
+    <div class="drop-zone">
+        DROP HERE
+    </div>
+</template>
+
+<template name="imageList">
+
+    {{#each images}}
+    <li><p>{{_id}}</p>
+        <img src="{{cfsFileUrl 'default1'}}" alt="{{_id}}">
+    </li>
+    {{/each}}
+</template>
+
+
+
